@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+
+  .isometric-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    border: 1px solid #2980b9;
+    transform: rotateX(45deg) rotateZ(45deg);
+    transform-origin: bottom;
+    margin-top: 60px; /* Ajusta según sea necesario */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  }
+
+  .isometric-card:hover {
+    transform: scale(1.05) rotateX(45deg) rotateZ(45deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  h2, p {
+    margin: 0;
+    color: #fff;
+    font-size: 34px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .isometric-card:hover {
+    transform: rotate(56deg);
+  }
